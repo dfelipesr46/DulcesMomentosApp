@@ -94,7 +94,7 @@ jobs:
             run: |
               ssh -p 65002 u976542190@88.223.85.92 'sed -i "s|^APP_NAME=.*|APP_NAME=${{ secrets.APP_NAME }}|" /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com/.env'
               ssh -p 65002 u976542190@88.223.85.92 'sed -i "s|^APP_ENV=.*|APP_ENV=${{ secrets.APP_ENV }}|" /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com/.env'
-              ssh -p 65002 u976542190@88.223.85.92 'sed -i "s|^APP_DEBUG=.*|APP_ENV=${{ secrets.APP_DEBUG }}|" /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com/.env'
+              ssh -p 65002 u976542190@88.223.85.92 'sed -i "s|^APP_DEBUG=.*|APP_DEBUG=${{ secrets.APP_DEBUG }}|" /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com/.env'
               ssh -p 65002 u976542190@88.223.85.92 'sed -i "s|^APP_URL=.*|APP_URL=${{ secrets.APP_URL }}|" /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com/.env'
               ssh -p 65002 u976542190@88.223.85.92 'sed -i "s|^DB_CONNECTION=.*|DB_CONNECTION=${{ secrets.DB_CONNECTION }}|" /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com/.env'
               ssh -p 65002 u976542190@88.223.85.92 'sed -i "s|^DB_HOST=.*|DB_HOST=${{ secrets.DB_HOST }}|" /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com/.env'
