@@ -19,6 +19,10 @@ class Order extends Model
         'delivery_date',   // Fecha y hora de entrega del pedido
     ];
 
+    protected $casts = [
+        'delivery_date' => 'datetime',
+    ];
+
     /**
      * Relación con el modelo Customer.
      * Un pedido pertenece a un cliente.
