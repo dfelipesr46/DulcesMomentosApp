@@ -105,7 +105,7 @@ jobs:
           - name: Deploy to Hostinger server
             run: |
               rsync -avz -e "ssh -p 65002" --exclude='.git' --exclude='node_modules' --exclude='.env' ./ u976542190@88.223.85.92:/home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com
-              ssh -p 65002 u976542190@88.223.85.92 'cd /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com && composer2 install --no-dev && php artisan migrate --force && php artisan key:generate && php artisan db:seed'
+              ssh -p 65002 u976542190@88.223.85.92 'cd /home/u976542190/domains/dulcesmomentos-felipesalamanca.jcomtec.com && composer2 install --no-dev && php artisan migrate --force && php artisan key:generate'
           - name: Check and Copy to public_html
             run: |
               ssh -p 65002 u976542190@88.223.85.92 << 'EOF'
